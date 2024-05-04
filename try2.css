@@ -1,0 +1,93 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('https://yourimageurl.com'); /* Update this URL */
+    background-size: cover;  /* Ensures the background covers the entire page */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    line-height: 1.6;
+    padding-top: 100px; /* Ensures content is not hidden behind the fixed navbar */
+    padding-bottom: 100px; /* Padding at the bottom for fixed footer */
+    color: #333; /* Ensures text visibility against a potentially complex background */
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white for legibility */
+    border-radius: 10px; /* Rounded corners for modern look */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Adds depth with shadow */
+}
+
+header {
+    background-color: #32a852; /* Fresh green, energetic for fitness theme */
+    color: #fff;
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 a, header nav ul li a {
+    color: #ffffff; /* White text for clear visibility */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #ddf0d8; /* Light green on hover for a subtle effect */
+}
+
+input[type="text"], input[type="email"], input[type="password"], input[type="number"] {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #cccccc;
+    border-radius: 5px; /* Slightly rounded borders for input fields */
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: #32a852; /* Consistent with the header */
+    color: white;
+    border: none;
+    border-radius: 5px; /* Rounded button corners */
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #279742; /* Darker green on hover */
+    transform: translateY(-2px); /* Slight raise effect */
+}
+
+footer {
+    background-color: #32a852;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    font-size: 14px;
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lifestyle - Fitness & Healthy Lifestyle</title>
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Latest compiled JavaScript -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+   
+    <link rel="stylesheet" href="try3.css">
+</head>
+
+<body>
+    <!-- Header with container class, h1 with link to homepage, and nav with unordered list of links "menu bar" -->
+    <header>    <!-- Bootstrap Navigation Bar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="home.html">Fitness & Healthy Lifestyle</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="fitness.html">Fitness Routines</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="nutrition.html">Nutrition</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="lifestyle.html">Lifestyle</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="registration.html">Register</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Account
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="registration.html">Sign Up</a></li>
+                            <li><a class="dropdown-item" href="signin.html">Login</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    <div class="container">
+        <!-- headers-->
+        <h2>Lifestyle</h2>
+        <h3>Enhance Your Well-being Beyond Fitness and Nutrition</h3>
+        <p>A wholesome lifestyle contributes to the maintenance and enhancement of individuals' health and overall well-being, offering effective means to alleviate stress. Numerous governmental and non-governmental entities are dedicated to advocating for healthy lifestyles. Adopting a healthy lifestyle is a continual endeavor, encompassing nutritious dietary habits, regular physical exercise, weight control, and effective stress management techniques.</p>
+
+        <!-- Images with descriptions and equal sizes -->
+            <img src="fruits.jpg" alt="Assortment of fresh fruits including apples, oranges, bananas, and grapes also vegetables such as paper"
+            width="200"
+            height="150">
+            <img src="angle.jpg" alt="A woman maintaining a balanced lifestyle by holding fresh fruits in one hand and a dumbbell in the other"
+            width="200"
+            height="150">
+            <img  src="sleep.webp" alt="A woman peacefully sleeping in a comfortable bed, demonstrating the importance of quality sleep for a healthy lifestyle"
+            width="200"
+            height="150">
+            <!-- Form for questions with multiply choices -->
+            <!--The user can choose and intract-->
+            <form id="quiz-form">
+                <div class="question">
+                    <p>1. Which of the following is considered a healthy breakfast option?</p>
+                    <div class="options">
+                        <label><input type="radio" name="q1" value="a"> a) Sugary cereal</label>
+                        <label><input type="radio" name="q1" value="b"> b) Fresh fruit and yogurt</label>
+                        <label><input type="radio" name="q1" value="c"> c) Donuts and pastries</label>
+                        <label><input type="radio" name="q1" value="d"> d) Bacon and eggs</label>
+                    </div>
+                </div>
+        
+                
+                <div class="question">
+                    <p>2. How many hours of sleep is typically recommended for adults per night?</p>
+                    <div class="options">
+                        <label><input type="radio" name="q2" value="a"> a) 3-4 hours</label>
+                        <label><input type="radio" name="q2" value="b"> b) 6-7 hours</label>
+                        <label><input type="radio" name="q2" value="c"> c) 10-12 hours</label>
+                        <label><input type="radio" name="q2" value="d"> d) 15-16 hours</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <p>3. Which activity is a form of aerobic exercise?</p>
+                    <div class="options">
+                        <label><input type="radio" name="q3" value="a"> a) Weightlifting</label>
+                        <label><input type="radio" name="q3" value="b"> b) Yoga</label>
+                        <label><input type="radio" name="q3" value="c"> c) Swimming</label>
+                        <label><input type="radio" name="q3" value="d"> d) Meditation</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <p>4. Which beverage is the healthiest choice to stay hydrated?</p>
+                    <div class="options">
+                        <label><input type="radio" name="q4" value="a"> a) Soda</label>
+                        <label><input type="radio" name="q4" value="b"> b) Fruit juice</label>
+                        <label><input type="radio" name="q4" value="c"> c) Sports drinks</label>
+                        <label><input type="radio" name="q4" value="d"> d) Water</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <p>5. How many servings of fruits and vegetables are recommended per day for a healthy diet?</p>
+                    <div class="options">
+                        <label><input type="radio" name="q5" value="a"> a) 1-2 servings</label>
+                        <label><input type="radio" name="q5" value="b

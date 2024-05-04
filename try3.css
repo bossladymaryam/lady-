@@ -1,0 +1,86 @@
+/* General Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #6db3f2, #1c92d2); /* More modern gradient background */
+    color: #ffffff; /* Ensures text is readable on darker backgrounds */
+    line-height: 1.6;
+    padding-top: 80px; /* Adjusted to ensure content isn't hidden behind nav */
+    min-height: 100vh; /* Full view height */
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Light background for content areas */
+    border-radius: 10px; /* Rounded corners for the container */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+header {
+    background-color: #1c92d2; /* Darker shade for header to stand out */
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between; /* Aligns nav items horizontally */
+    align-items: center;
+}
+
+header .navbar-brand, header .nav-link {
+    color: #ffffff !important; /* Ensures text is white */
+}
+
+header .nav-link:hover {
+    background-color: #6db3f2; /* Lighter shade on hover */
+    border-radius: 5px; /* Rounded corners for hover effect */
+}
+
+footer {
+    background-color: #1c92d2;
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0; /* Removes default margin */
+}
+
+/* Typography */
+h2, h3 {
+    padding: 10px;
+    border-left: 5px solid #6db3f2; /* Adds a stylized border to headings */
+}
+
+/* Table and List Enhancements */
+table, th, td {
+    border: 1px solid #ffffff; /* Light borders for readability */
+    padding: 10px;
+}
+
+th {
+    background-color: #6db3f2; /* Consistent header background */
+}
+
+ol, p {
+    padding: 0 20px; /* Padding for text content */
+}
+
+li {
+    margin-bottom: 10px; /* Space between list items */
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="design.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <h1>User Dashboard</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li> <!--Link to the Home page-->
+                <li><a href="fitness.html">Fitness Routines</a></li> <!--Link to the Fitness Routines page-->
+                <li><a href="nutrition.html">Nutrition</a></li> <!--Link to the Nutrition page-->
+                <li><a href="lifestyle.html">Lifestyle</a></li> <!--Link to the Lifestyle page-->
+                <li><a href="registration.html">Register</a></li> <!--Link to the Register page-->
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main content area -->
+    <main>
+        <section class="profile-info">
+            <!-- Display user profile information -->
+            <h2>Profile Information</h2>
+            <p>Name: John Doe</p>
+            <p>Age: 30</p>
+            <p>Weight: 70 kg</p>
+            <p>Height: 175 cm</p>
+            <!-- Add more profile information here -->
+        </section>
+
+        <section class="fitness-activities">
+            <!-- Display fitness activity tracking -->
+            <h2>Fitness Activities</h2>
+            <!-- Add fitness activity tracking elements here -->
+        </section>
+
+        <section class="progress-tracking">
+            <!-- Display progress tracking -->
+            <h2>Progress Tracking</h2>
+            <!-- Add progress tracking elements here -->
+        </section>
+
+        <section class="goal-setting">
+            <!-- Display goal setting options -->
+            <h2>Goal Setting</h2>
+            <!-- Add goal setting elements here -->
+        </section>
+
+        <section class="personalized-recommendations">
+            <!-- Display personalized recommendations -->
+            <h2>Personalized Recommendations</h2>
+            <!-- Add personalized recommendation elements here -->
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Fitness & Healthy Lifestyle</p>
+    </footer>
+</body>
+
+</html>

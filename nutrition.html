@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutrition - Fitness & Healthy Lifestyle</title>
+    <!-- Link to the CSS file -->
+    <link rel="stylesheet" href="design.css">
+</head>
+
+<body>
+    <!-- Header with container class, h1 with link to homepage, and nav with unordered list of links "menu bar" -->
+    <header>
+        <div class="container">
+            <!-- Header -->
+            <h1><a href="home.html">Fitness & Healthy Lifestyle</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li> <!--Link to the Home page-->
+                    <li><a href="fitness.html">Fitness Routines</a></li> <!--Link to the Fitness Routines page-->
+                    <li><a href="nutrition.html">Nutrition</a></li> <!--Link to the Nutrition page-->
+                    <li><a href="lifestyle.html">Lifestyle</a></li> <!--Link to the Lifestyle page-->
+                    <li><a href="registration.html">Register</a></li> <!--Link to the Register page-->
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <h2>Nutrition</h2>
+        <h3>Why Nutrition Matters?</h3>
+        <!--List of unordered resons why nutrition matters-->
+        <ul>
+            <li>Good Nutrition Improves Well-Being</li>
+            <li>Helps You Manage A Healthy Weight</li>
+            <li>Delays the Effects Of Aging</li>
+            <li>Gives You Energy</li>
+            <li>Healthy Eating Positively Affects Your Mood</li>
+            <li>Increases Focus</li>
+            <!--https://www.unitypoint.org/news-and-articles/10-reasons-doctors-talk-about-the-need-for-good-nutrition-diets-->
+
+        </ul>
+
+        <h3>Ready to Take Charge of Your Nutrition?</h3>
+        <p>Explore the resources below to learn more about nutrition and start making positive changes to your diet today. Remember, small changes can lead to big results when it comes to your health and well-being.</p>
+        <!--used Strong to make it bold-->
+        <ul>
+            <li><strong>Healthy Eating Tips:</strong><a href="https://www.youtube.com/watch?v=jwWpTAXu-Sg">Click here</a></li>
+            <li><strong>Recipes and Meal Ideas: </strong><a href="https://www.youtube.com/watch?v=_f4ArgoSmoM">Click here</a></li>
+        </ul>
+        <!-- Nutrition Calculator so the user can intract with it -->
+        <h3>Nutrition Calculator</h3>
+        <div class="form-group">
+            <label for="gender">Gender</label>
+            <select id="gender" name="gender" required>
+                <option value="" disabled selected>Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+        </div>
+        <form id="nutrition-form">
+            <!-- Weight input field -->
+            <div class="form-group">
+                <label for="weight">Weight (kg)</label>
+                <input type="number" id="weight" name="weight" required>
+            </div>
+            <!-- Height input field -->
+            <div class="form-group">
+                <label for="height">Height (cm)</label>
+                <input type="number" id="height" name="height" required>
+            </div>
+            <!-- Age input field -->
+            <div class="form-group">
+                <label for="age">Age</label>
+                <input type="number" id="age" name="age" required>
+            </div>
+            <div class="form-group">
+                <!-- Activity Level select field -->
+                <label for="activity-level">Activity Level</label>
+                <select id="activity-level" name="activity-level" required>
+                    <option value="" disabled selected>Select Activity Level</option>
+                    <option value="sedentary">Sedentary (little to no exercise)</option>
+                    <option value="lightly-active">Lightly Active (light exercise/sports 1-3 days/week)</option>
+                    <option value="moderately-active">Moderately Active (moderate exercise/sports 3-5 days/week)</option>
+                    <option value="very-active">Very Active (hard exercise/sports 6-7 days a week)</option>
+                    <option value="extra-active">Extra Active (very hard exercise/sports & physical job)</option>
+                </select>
+            </div>
+            <!-- Goal select field -->
+            <div class="form-group">
+                <label for="goal">Goal</label>
+                <select id="goal" name="goal" required>
+                    <option value="" disabled selected>Select Goal</option>
+                    <option value="weight-loss">Weight Loss</option>
+                    <option value="maintenance">Maintenance</option>
+                    <option value="muscle-gain">Muscle Gain</option>
+                </select>
+            </div>
+            <!-- Submit button -->
+            <div class="form-group">
+
+                <button type="submit">Calculate</button>
+            </div>
+            <!-- Result area -->
+            <div id="result"></div>
+            
+        </form>
+        <h3> Reference list</h3>
+        <p>UnityPoint Health. [no date]. 10 Reasons Doctors Talk About The Need For Good Nutrition & Diets. [Online]. [Accessed 26 February 2024]. Available from: <a href="https://www.unitypoint.org/news-and-articles/10-reasons-doctors-talk-about-the-need-for-good-nutrition-diets">Click here</a></p>
+
+    </div>
+
+    <!-- Footer with copyright information -->
+    <footer>
+        <p>&copy; 2024 Your Fitness & Healthy Lifestyle</p>
+    </footer>
+
+    <script src="java.nut"></script>
+</body>
+
+</html>

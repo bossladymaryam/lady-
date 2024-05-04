@@ -1,0 +1,134 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('fit.jpg');
+    background-size: 500rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    line-height: 1.6;
+    padding-top: 100px; /* add this to make the body shown not behind the nav bar */
+    padding-bottom: 100px;
+}
+   /* background-color: #f9f9f9;
+    line-height: 1.6;*/
+    /*background-image: url('fit.jpg'); /* Replace 'background-image.jpg' with the path to your image */
+
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #dffaff;
+    color: #fff;
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; 
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 a {
+    color: #333;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #4ea68d; /* Change to your preferred hover color */
+}
+
+.container h2 {
+    margin: 20px 0;
+    font-size: 28px;
+    color: #dffaff;
+}
+.container h3 {
+    margin: 20px 0;
+    font-size: 24px;
+    color: #093920;
+}
+
+
+.options {
+    margin-bottom: 30px;
+    color: #dffaff;
+}
+
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    background-color: #dffaff;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #a2b9a9;
+}
+
+.container p {
+    margin-bottom: 30px;
+    color: #dffaff;
+}
+
+.container li {
+    margin-bottom: 20px;
+    color: #dffaff;
+}
+
+
+
+footer {
+    background-color: #dffaff;
+    color: #6c6c6c;
+    padding: 2rem;
+    width: 100%;
+    text-align: center;
+    position: fixed; 
+    left: 0;
+    bottom: 0;
+}
+
+
+footer p {
+    font-size: 14px;
+}

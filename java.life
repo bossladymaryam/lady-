@@ -1,0 +1,42 @@
+document.addEventListener('DOMContentLoaded', function () {
+    const form = document.getElementById('quiz-form');
+    form.addEventListener('submit', function (event) {
+        event.preventDefault(); // Prevent the form from submitting
+        
+        // Get user's answers
+        const answers = {
+            q1: form.querySelector('input[name="q1"]:checked').value,
+            q2: form.querySelector('input[name="q2"]:checked').value,
+            q3: form.querySelector('input[name="q3"]:checked').value,
+            q4: form.querySelector('input[name="q4"]:checked').value,
+            q5: form.querySelector('input[name="q5"]:checked').value,
+            q6: form.querySelector('input[name="q6"]:checked').value
+        };
+        
+        // Calculate score based on answers (example scoring logic)
+        let score = 0;
+        if (answers.q1 === 'b') score++;
+        if (answers.q2 === 'b') score++;
+        if (answers.q3 === 'c') score++;
+        if (answers.q4 === 'd') score++;
+        if (answers.q5 === 'c') score++;
+        if (answers.q6 === 'c') score++;
+        
+        // Provide personalized feedback based on score
+        let feedback;
+        if (score === 6) {
+            feedback = "Congratulations! You have excellent knowledge about a healthy lifestyle.";
+        } else if (score >= 4) {
+            feedback = "Well done! Your knowledge about a healthy lifestyle is good.";
+        } else if (score >= 2) {
+            feedback = "You have an average understanding of a healthy lifestyle. Consider learning more.";
+        } else {
+            feedback = "Your knowledge about a healthy lifestyle needs improvement. Consider educating yourself further.";
+        }
+        
+        // Display feedback to the user
+        const resultContainer = document.createElement('div');
+        resultContainer.innerHTML = `<p>${feedback}</p>`;
+        form.appendChild(resultContainer);
+    });
+});
